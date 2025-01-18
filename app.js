@@ -21,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.use('/api/todos', todoRoutes);
 
-
 // Database Connection
 const mongoURI = process.env.MONGO_URI; // Access MONGO_URI from .env
 if (!mongoURI) {

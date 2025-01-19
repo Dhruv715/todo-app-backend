@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Use CORS middleware
 app.use(
   cors({
-    origin: ['http://localhost:5173','https://todo-app-xi-seven-13.vercel.app/'], // Replace with your frontend's origin
+    origin: 'https://todo-app-xi-seven-13.vercel.app/', // Replace with your frontend's origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   })
